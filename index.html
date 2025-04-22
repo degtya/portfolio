@@ -1,348 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Olga Degtiareva – Portfolio</title>
+  <title>Olga Degtiareva – portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
+  <section class="hero position-relative">
+    <video id="heroVideo" autoplay muted playsinline class="bg-video">
+      <source src="background.mp4" type="video/mp4" />
+      Tvůj prohlížeč nepodporuje video tag.
+    </video>
 
-    
-      <section class="hero position-relative">
-  
-        <video id="heroVideo" autoplay muted playsinline class="bg-video">
-          <source src="background.mp4" type="video/mp4" />
-          Tvůj prohlížeč nepodporuje video tag.
-        </video>
+    <div class="video-overlay"></div>
 
-        <div class="video-overlay"></div>
-      
-        <div class="container position-relative z-1">
-        <div class="container d-flex align-items-center justify-content-start min-vh-100 ">
-          <div class="hero-box d-flex flex-column justify-content-between p-4">
-            <div>
-              <p class="tagline">Frontend Developer & UI Designer</p>
-              <h1>Olga Degtiareva</h1>
+    <div class="container position-relative z-1">
+      <div class="container d-flex align-items-center justify-content-start min-vh-100 ">
+        <div class="hero-box d-flex flex-column justify-content-between p-4">
+          <div>
+            <p class="tagline">Frontend Developer & UI Designer</p>
+            <h1>Olga Degtiareva</h1>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-5">
+            <span class="text-uppercase fw-bold small">Portfolio</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1a1a1a" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4-.007.007a.498.498 0 0 1-.694-.007l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-5 text-uppercase fw-bold">Webové aplikace</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalContinental">
+            <img src="img/continental1.png" alt="Continental app">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">Doprava ze skladu – Continental Barum s.r.o</h3>
             </div>
-            <div class="d-flex justify-content-between align-items-center mt-5">
-              <span class="text-uppercase fw-bold small">Portfolio</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#1a1a1a" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4-.007.007a.498.498 0 0 1-.694-.007l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-              </svg>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalBezpecnost">
+            <img src="img/bezpecnost.png" alt="Bezpečnostní portál">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">Bezpečnostní portál</h3>
             </div>
           </div>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-5 text-uppercase fw-bold">Weby</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalVitsol">
+            <img src="img/vitsol.png" alt="Vitsol">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">vitsol.cz</h3>
+            </div>
+          </div>
         </div>
-      </section>
-      
 
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-5 text-uppercase fw-bold">Webové aplikace</h2>
-    <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalVitkovice">
+            <img src="img/vitkovice.png" alt="Vitkovice.cz">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">vitkovice.cz</h3>
+            </div>
+          </div>
+        </div>
 
-      <div class="col-md-6">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalContinental">
-          <img src="img/continental1.png" alt="Continental app">
-          <div class="overlay">
-            <h3 class="text-white fw-bold m-0">Doprava ze skladu – Continental Barum s.r.o</h3>
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalOasis">
+            <img src="img/oasis.png" alt="Oasis web">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">Oasis</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalCylinders">
+            <img src="img/cylinders.png" alt="Cylinders">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">cylinders.cz</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalVitkoviceCyl">
+            <img src="img/vitkovicecylinders.png" alt="Vitkovice Cylinders">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">vitkovicecylinders.cz</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalTechnovit">
+            <img src="img/technovit.png" alt="Technovit">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">technovit.cz</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-5 text-uppercase fw-bold">Mobilní aplikace</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalSlozTo">
+            <img src="img/slozto.png" alt="SložTo app">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">SložTo</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalEprepazka">
+            <img src="img/eprepazka.png" alt="ePřepažka app">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">ePřepažka</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalWeather">
+            <img src="img/weather.jpg" alt="Weather app">
+            <div class="overlay">
+              <h3 class="text-white fw-bold m-0">Weather app</h3>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="modalContinental" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Doprava ze skladu – Continental Barum s.r.o.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Aplikace slouží k zajištění objednávek materiálu ze skladu na konkrétní provozy ve výrobě.
+            Navrhla jsem uživatelské rozhraní ve Figmě s důrazem na jednoduchost, přehlednost a maximální efektivitu –
+            aplikace je optimalizována tak, aby pracovník na provoze zvládl zadání objednávky během několika sekund.
+          </p>
+          <p>
+            Webovou aplikaci jsem následně plně implementovala pomocí Blazoru. Systém umožňuje vytvářet nové požadavky,
+            sledovat jejich stav v reálném čase, zobrazit historii objednávek a filtrovat je podle provozu, data nebo
+            stavu.
+            Součástí je také přihlašování uživatelů a správa jejich oprávnění.
+          </p>
+          <p>
+            🔗 <a href="https://www.figma.com/design/qv3NePer1v8uMmKIIg5zyq/Continental?t=BCStu8eZ2FFIKXJw-1"
+              target="_blank">Návrh ve Figmě</a>
+          </p>
+          <div class="row">
+            <div class="col-md-4"><img src="img/continental1.png" class="img-fluid rounded mb-3"></div>
+            <div class="col-md-4"><img src="img/continental2.png" class="img-fluid rounded mb-3"></div>
+            <div class="col-md-4"><img src="img/continental3.png" class="img-fluid rounded mb-3"></div>
           </div>
         </div>
       </div>
-
-      <div class="col-md-6">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalBezpecnost">
-          <img src="img/bezpecnost.png" alt="Bezpečnostní portál">
-          <div class="overlay">
-            <h3 class="text-white fw-bold m-0">Bezpečnostní portál</h3>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
-</section>
 
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-5 text-uppercase fw-bold">Weby</h2>
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalVitsol">
-          <img src="img/vitsol.png" alt="Vitsol">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">vitsol.cz</h3></div>
+  <div class="modal fade" id="modalBezpecnost" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Bezpečnostní portál</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
         </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalVitkovice">
-          <img src="img/vitkovice.png" alt="Vitkovice.cz">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">vitkovice.cz</h3></div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalOasis">
-          <img src="img/oasis.png" alt="Oasis web">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">Oasis</h3></div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalCylinders">
-          <img src="img/cylinders.png" alt="Cylinders">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">cylinders.cz</h3></div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalVitkoviceCyl">
-          <img src="img/vitkovicecylinders.png" alt="Vitkovice Cylinders">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">vitkovicecylinders.cz</h3></div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalTechnovit">
-          <img src="img/technovit.png" alt="Technovit">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">technovit.cz</h3></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-5 text-uppercase fw-bold">Mobilní aplikace</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalSlozTo">
-          <img src="img/slozto.png" alt="SložTo app">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">SložTo</h3></div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalEprepazka">
-          <img src="img/eprepazka.png" alt="ePřepažka app">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">ePřepažka</h3></div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="project-card" data-bs-toggle="modal" data-bs-target="#modalWeather">
-          <img src="img/weather.jpg" alt="Weather app">
-          <div class="overlay"><h3 class="text-white fw-bold m-0">Weather app</h3></div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
-
-
-<div class="modal fade" id="modalContinental" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Doprava ze skladu – Continental Barum s.r.o.</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
-      </div>
-      <div class="modal-body">
-        <p>
-          Aplikace slouží k zajištění objednávek materiálu ze skladu na konkrétní provozy ve výrobě.
-          Navrhla jsem uživatelské rozhraní ve Figmě s důrazem na jednoduchost, přehlednost a maximální efektivitu –
-          aplikace je optimalizována tak, aby pracovník na provoze zvládl zadání objednávky během několika sekund.
-        </p>
-        <p>
-          Webovou aplikaci jsem následně plně implementovala pomocí Blazoru. Systém umožňuje vytvářet nové požadavky,
-          sledovat jejich stav v reálném čase, zobrazit historii objednávek a filtrovat je podle provozu, data nebo stavu.
-          Součástí je také přihlašování uživatelů a správa jejich oprávnění.
-        </p>
-        <p>
-          🔗 <a href="https://www.figma.com/design/qv3NePer1v8uMmKIIg5zyq/Continental?node-id=0-1" target="_blank">Návrh ve Figmě</a>
-        </p>
-        <div class="row">
-          <div class="col-md-4"><img src="img/continental1.png" class="img-fluid rounded mb-3"></div>
-          <div class="col-md-4"><img src="img/continental2.png" class="img-fluid rounded mb-3"></div>
-          <div class="col-md-4"><img src="img/continental3.png" class="img-fluid rounded mb-3"></div>
+        <div class="modal-body">
+          <p>
+            Vytvořila jsem návrh a funkční frontend pro bezpečnostní portál určený pro vedoucí pracovníky záchranného
+            systému.
+            Cílem projektu bylo sjednotit zobrazení alertů z různých interních systémů do jednoho přehledného rozhraní.
+          </p>
+          <p>
+            Kód frontendu je vytvořen v HTML, CSS a čistém JavaScriptu. Backendová logika byla napojena na Pythonový
+            server.
+          </p>
+          <p>
+            🔗 <a href="https://www.figma.com/design/ZGTd9uSwFgfRKRQstzwv2X/Figma-basics?t=BCStu8eZ2FFIKXJw-1"
+              target="_blank">Návrh ve Figmě</a>
+          </p>
+          <div><img src="img/bezpecnost.png" class="img-fluid rounded mb-3"></div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="modalBezpecnost" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Bezpečnostní portál</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
-      </div>
-      <div class="modal-body">
-        <p>
-          Vytvořila jsem návrh a funkční frontend pro bezpečnostní portál určený pro vedoucí pracovníky záchranného systému.
-          Cílem projektu bylo sjednotit zobrazení alertů z různých interních systémů do jednoho přehledného rozhraní.
-        </p>
-        <p>
-          Kód frontendu je vytvořen v HTML, CSS a čistém JavaScriptu. Backendová logika byla napojena na Pythonový server.
-        </p>
-        <p>
-          🔗 <a href="https://www.figma.com/design/ZGTd9uSwFgfRKRQstzwv2X/Figma-basics" target="_blank">Návrh ve Figmě</a>
-        </p>
-        <div><img src="img/bezpecnost.png" class="img-fluid rounded mb-3"></div>
+  <div class="modal fade" id="modalVitsol" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Vitsol</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Web jsem vytvořila z vlastní iniciativy pro firmu, kde jsem právě začala pracovat. Chtěla jsem zmodernizovat
+            vzhled stávajících stránek, a tak jsem navrhla novou strukturu, design i UX. Byl to pro mě hodně zajímavý
+            projekt – hlavně proto, že jsem musela projít celou firmou a získat podklady k obsahu. Byl to můj první
+            velký projekt a díky němu se začali ozývat i další lidé, jestli bychom jim taky nemohli vytvořit web.
+          </p>
+          <p>🔗 <a href="https://www.vitsol.cz" target="_blank">www.vitsol.cz</a></p>
+          <img src="img/vitsol.png" class="img-fluid rounded">
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="modalVitsol" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">Vitsol</h5>
-      <button class="btn-close" data-bs-dismiss="modal"></button>
+  <div class="modal fade" id="modalCylinders" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cylinders.cz</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Cylinders.cz je hlavní web skupiny výrobců tlakových lahví. Navrhla jsem jeho novou strukturu, vzhled i
+            celkový obsah s důrazem na přehlednost a snadnou orientaci pro zákazníky i partnery. Šlo o projekt, kde jsem
+            měla na starosti celý proces – od návrhu přes realizaci až po optimalizaci pro vyhledávače. Výsledkem je
+            moderní a technicky čistý web, který reprezentuje skupinu navenek.
+          </p>
+          <p>🔗 <a href="https://www.cylinders.cz" target="_blank">www.cylinders.cz</a></p>
+          <img src="img/cylinders.png" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-    <div class="modal-body">
-      <p>
-        Web jsem vytvořila z vlastní iniciativy pro firmu, kde jsem právě začala pracovat. Chtěla jsem zmodernizovat vzhled stávajících stránek, a tak jsem navrhla novou strukturu, design i UX. Byl to pro mě hodně zajímavý projekt – hlavně proto, že jsem musela projít celou firmou a získat podklady k obsahu. Byl to můj první velký projekt a díky němu se začali ozývat i další lidé, jestli bychom jim taky nemohli vytvořit web.
-      </p>        
-      <p>🔗 <a href="https://www.vitsol.cz" target="_blank">www.vitsol.cz</a></p>
-      <img src="img/vitsol.png" class="img-fluid rounded">
-    </div>
-  </div></div>
-</div>
+  </div>
 
-<div class="modal fade" id="modalCylinders" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header"><h5 class="modal-title">Cylinders.cz</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-    <div class="modal-body">
-      <p>
-        Cylinders.cz je hlavní web skupiny výrobců tlakových lahví. Navrhla jsem jeho novou strukturu, vzhled i celkový obsah s důrazem na přehlednost a snadnou orientaci pro zákazníky i partnery. Šlo o projekt, kde jsem měla na starosti celý proces – od návrhu přes realizaci až po optimalizaci pro vyhledávače. Výsledkem je moderní a technicky čistý web, který reprezentuje skupinu navenek.
-      </p>        
-      <p>🔗 <a href="https://www.cylinders.cz" target="_blank">www.cylinders.cz</a></p>
-      <img src="img/cylinders.png" class="img-fluid rounded">
+  <div class="modal fade" id="modalVitkoviceCyl" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">VitkoviceCylinders.cz</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            VitkoviceCylinders.cz je web pro jednu z firem skupiny Cylinders. Cílem bylo navázat vizuálně na hlavní web,
+            ale zároveň vytvořit samostatnou prezentaci zaměřenou hlavně na produktové portfolio. Celý projekt jsem
+            zpracovala samostatně.
+          </p>
+          <p>🔗 <a href="https://www.vitkovicecylinders.cz" target="_blank">www.vitkovicecylinders.cz</a></p>
+          <img src="img/vitkovicecylinders.png" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-  </div></div>
-</div>
+  </div>
 
-<div class="modal fade" id="modalVitkoviceCyl" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header"><h5 class="modal-title">VitkoviceCylinders.cz</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-    <div class="modal-body">
-      <p>
-        VitkoviceCylinders.cz je web pro jednu z firem skupiny Cylinders. Cílem bylo navázat vizuálně na hlavní web, ale zároveň vytvořit samostatnou prezentaci zaměřenou hlavně na produktové portfolio. Celý projekt jsem zpracovala samostatně.
-      </p>
-      <p>🔗 <a href="https://www.vitkovicecylinders.cz" target="_blank">www.vitkovicecylinders.cz</a></p>
-      <img src="img/vitkovicecylinders.png" class="img-fluid rounded">
+  <div class="modal fade" id="modalTechnovit" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Technovit.cz</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Jednoduchý, ale funkční web pro další firmu ze skupiny Cylinders. Cílem bylo vytvořit čisté a přehledné
+            rozhraní s důrazem na klíčové informace, a zároveň navázat na vizuální styl hlavního webu. Celý projekt jsem
+            zpracovala samostatně.
+          </p>
+          <p>🔗 <a href="https://www.technovit.cz" target="_blank">www.technovit.cz</a></p>
+          <img src="img/technovit.png" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-  </div></div>
-</div>
+  </div>
 
-<div class="modal fade" id="modalTechnovit" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header"><h5 class="modal-title">Technovit.cz</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-    <div class="modal-body">
-      <p>
-        Jednoduchý, ale funkční web pro další firmu ze skupiny Cylinders. Cílem bylo vytvořit čisté a přehledné rozhraní s důrazem na klíčové informace, a zároveň navázat na vizuální styl hlavního webu. Celý projekt jsem zpracovala samostatně.
-      </p>        
-      <p>🔗 <a href="https://www.technovit.cz" target="_blank">www.technovit.cz</a></p>
-      <img src="img/technovit.png" class="img-fluid rounded">
+  <div class="modal fade" id="modalOasis" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Oasis – SEO mikroweb</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Školní projekt zaměřený na SEO, optimalizaci rychlosti načítání a moderní webové standardy. Plně
+            responzivní a publikovaný online.</p>
+          <p>🔗 <a href="https://degtya.github.io/oasis-web/" target="_blank">degtya.github.io/oasis-web</a></p>
+          <img src="img/oasis.png" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-  </div></div>
-</div>
-
-<div class="modal fade" id="modalOasis" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header"><h5 class="modal-title">Oasis – SEO mikroweb</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-    <div class="modal-body">
-      <p>Školní projekt zaměřený na SEO, optimalizaci rychlosti načítání a moderní webové standardy. Plně responzivní a publikovaný online.</p>
-      <p>🔗 <a href="https://degtya.github.io/oasis-web/" target="_blank">degtya.github.io/oasis-web</a></p>
-      <img src="img/oasis.png" class="img-fluid rounded">
-    </div>
-  </div></div>
-</div>
+  </div>
 
 
-<div class="modal fade" id="modalVitkovice" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header"><h5 class="modal-title">Vitkovice.cz</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-    <div class="modal-body">
-      <p>
-        Vitkovice.cz je hlavní web skupiny Vítkovice. Měla jsem na starosti celý projekt – od prvních návrhů přes komunikaci s týmem až po spuštění. Všechno jsem realizovala sama.
-      </p>        
-      <p>🔗 <a href="https://www.vitkovice.cz" target="_blank">www.vitkovice.cz</a></p>
-      <img src="img/vitkovice.png" class="img-fluid rounded">
+  <div class="modal fade" id="modalVitkovice" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Vitkovice.cz</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Vitkovice.cz je hlavní web skupiny Vítkovice. Měla jsem na starosti celý projekt – od prvních návrhů přes
+            komunikaci s týmem až po spuštění. Všechno jsem realizovala sama.
+          </p>
+          <p>🔗 <a href="https://www.vitkovice.cz" target="_blank">www.vitkovice.cz</a></p>
+          <img src="img/vitkovice.png" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-  </div></div>
-</div>
+  </div>
 
-<div class="modal fade" id="modalSlozTo" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">SložTo – aplikace pro děti s poruchou řeči</h5>
-      <button class="btn-close" data-bs-dismiss="modal"></button>
+  <div class="modal fade" id="modalSlozTo" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SložTo – aplikace pro děti s poruchou řeči</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Aplikace pro tablet ve spolupráci se školou. Slouží dětem s poruchou řeči ke komunikaci pomocí obrázkových
+            kartiček.
+            Projekt je stále ve vývoji a vznikl jako pokračování starší aplikace Klabosil.
+          </p>
+          <p>
+            🔗 <a href="https://www.figma.com/design/APmWRFjGZoxXvLmDhZUaNP/Slo%C5%BEto?t=BCStu8eZ2FFIKXJw-1"
+              target="_blank">Návrh ve Figmě</a>
+          </p>
+          <img src="img/slozto.png" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-    <div class="modal-body">
-      <p>
-        Aplikace pro tablet ve spolupráci se školou. Slouží dětem s poruchou řeči ke komunikaci pomocí obrázkových kartiček.
-        Projekt je stále ve vývoji a vznikl jako pokračování starší aplikace Klabosil.
-      </p>
-      <p>
-        🔗 <a href="https://www.figma.com/design/APmWRFjGZoxXvLmDhZUaNP/Slo%C5%BEto?t=agW6ie3hQfch2TWo-1" target="_blank">Návrh ve Figmě</a>
-      </p>
-      <img src="img/slozto.png" class="img-fluid rounded">
-    </div>
-  </div></div>
-</div>
+  </div>
 
-<div class="modal fade" id="modalEprepazka" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">ePřepažka – Portál nájemníka Ostrava-Jih</h5>
-      <button class="btn-close" data-bs-dismiss="modal"></button>
+  <div class="modal fade" id="modalEprepazka" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">ePřepažka – Portál nájemníka Ostrava-Jih</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Aplikace vznikla jako týmový projekt pro městský obvod Ostrava-Jih. Umožňuje obyvatelům zadávat požadavky a
+            hlášení přímo přes mobilní telefon.
+            Podílela jsem se na návrhu uživatelského rozhraní a vývoji frontendu. Aplikace je volně dostupná na Google
+            Play.
+          </p>
+          <img src="img/eprepazka.png" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-    <div class="modal-body">
-      <p>
-        Aplikace vznikla jako týmový projekt pro městský obvod Ostrava-Jih. Umožňuje obyvatelům zadávat požadavky a hlášení přímo přes mobilní telefon.
-        Podílela jsem se na návrhu uživatelského rozhraní a vývoji frontendu. Aplikace je volně dostupná na Google Play.
-      </p>
-      <p>
-        🔗 <a href="https://play.google.com/store/apps/details?id=cz.eprepazka.mobilni" target="_blank">Zobrazit na Google Play</a>
-      </p>
-      <img src="img/eprepazka.png" class="img-fluid rounded">
-    </div>
-  </div></div>
-</div>
+  </div>
 
-<div class="modal fade" id="modalWeather" tabindex="-1">
-  <div class="modal-dialog modal-lg"><div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">Weather App – školní projekt</h5>
-      <button class="btn-close" data-bs-dismiss="modal"></button>
+  <div class="modal fade" id="modalWeather" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Weather App – školní projekt</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Jednoduchá školní aplikace pro zobrazení aktuálního počasí podle zadaného města. Uživatelské rozhraní je
+            navrženo pro mobil a obsahuje základní informace jako teplotu, typ oblačnosti a ikonku podle předpovědi.
+          </p>
+          <img src="img/weather.jpg" class="img-fluid rounded">
+        </div>
+      </div>
     </div>
-    <div class="modal-body">
-      <p>
-        Jednoduchá školní aplikace pro zobrazení aktuálního počasí podle zadaného města. Uživatelské rozhraní je navrženo pro mobil a obsahuje základní informace jako teplotu, typ oblačnosti a ikonku podle předpovědi.
-      </p>
-      <img src="img/weather.png" class="img-fluid rounded">
-    </div>
-  </div></div>
-</div>
+  </div>
 
-     
-         
-      
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
